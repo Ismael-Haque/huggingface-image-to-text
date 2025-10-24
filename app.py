@@ -22,6 +22,7 @@ with gr.Blocks() as demo:
     input = gr.Image(label="Image")
     gen_button = gr.Button("Generate Caption")
     output = gr.TextArea(label="Caption")
+    gr.DeepLinkButton()
 
     gen_button.click(fn=caption, inputs=input, outputs=output)
 
