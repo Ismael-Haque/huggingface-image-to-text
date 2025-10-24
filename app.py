@@ -25,5 +25,5 @@ with gr.Blocks() as demo:
 
     gen_button.click(fn=caption, inputs=input, outputs=output)
 
-
-demo.launch()
+    # launch app
+    demo.launch()
